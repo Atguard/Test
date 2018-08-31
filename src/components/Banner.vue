@@ -6,11 +6,8 @@
 </template>
 
 <script>
-
 export default {
-  components: {
-
-  },
+  components: {},
   name: "HelloWorld",
   data() {
     return {
@@ -21,19 +18,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-
-<!--
-Some colors:
-00B28B
-04FFC7
-00FFC6
-B22D00
-FF4100
--->
 <style scoped>
-h1 {
-  color: #B22D00;
-}
+h1,
 h2 {
   font-weight: bold;
 }
