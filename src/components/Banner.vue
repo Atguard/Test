@@ -1,10 +1,8 @@
 <template>
-  <div class="Test">
-    <h1>{{ msg }}</h1>
-    Hallo{{ user && ' '+user }}! Am {{date}} begrüße ich dich!
+  <div class="Header">
+    <h1>Game Translation</h1>
+    <hr>
     <br />
-    <input v-model="user" />
-    <button @click="refresh2">Refresch</button>
   </div>
 </template>
 
@@ -16,47 +14,34 @@ export default {
   name: "Banner",
   data() {
     return {
-      msg: "Welcome to ... what ever!",
       date: (new Date()).toLocaleString(),
       user: ""
     };
   },
-  methods: {
-    refresh2: function() {
-      this.user = ""
-      this.refresh()
-    },
-    refresh: function() {
-      this.date = (new Date()).toLocaleString()
-    }
-  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-
-<!--
-Some colors:
-00B28B
-04FFC7
-00FFC6
-B22D00
-FF4100
--->
 <style scoped>
 h1 {
-  color: #B22D00;
+  font-size: 52px;
+  background: -webkit-linear-gradient(#FFE400, #E58600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-h2 {
-  font-weight: bold;
+
+hr {
+    border: 0;
+    border-top: solid 1px #ddd;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 a {
   color: #42b983;
