@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Banner/>
+    <Frontpage/>
   </div>
 </template>
 
 <script>
-import Banner from "./components/Banner";
+import Frontpage from "./components/Frontpage";
 
 export default {
   name: "App",
   components: {
-    Banner
+    Frontpage
   }
 };
 </script>

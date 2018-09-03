@@ -1,39 +1,49 @@
 <template>
-  <div class="Header">
+  <div class="Root">
     <h1>Game Translation</h1>
-    <hr>
-    <br />
+    <hr />
+    <div class="login-container">
+    <h2>Login</h2>
+    </div>
   </div>
 </template>
 
 <script>
 
 export default {
-  components: {
-  },
-  name: "Banner",
-  data() {
-    return {
-      date: (new Date()).toLocaleString(),
-      user: ""
-    };
-  },
+  
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-  font-size: 52px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 40px;
   background: -webkit-linear-gradient(#FFE400, #E58600);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 hr {
+    height: 12px;
     border: 0;
-    border-top: solid 1px #ddd;
+    box-shadow: inset 0 12px 6px -12px rgba(229, 134, 0, 0.5);
 }
+
+.login-container {
+  //background-color: black;
+  margin: auto;
+  margin-top: 10%;
+  height: 300px;
+  width: 350px;
+}
+
+.login-container h2 {
+  font-family: Courier New, Courier, monospace;
+  text-transform: uppercase;
+}
+
 
 ul {
   list-style-type: none;
