@@ -4,6 +4,15 @@
     <hr />
     <div class="login-container">
     <h2>Login</h2>
+    <br />
+    <div id="Username">
+    Username:
+    <input v-model="user">
+    </div>
+    <div id="Password">
+    Password:
+    <input v-model="pw">
+    </div>
     </div>
   </div>
 </template>
@@ -11,7 +20,7 @@
 <script>
 
 export default {
-  
+ 
 };
 </script>
 
